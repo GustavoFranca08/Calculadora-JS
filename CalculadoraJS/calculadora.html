@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <section class="calculator-card">
+            <form class="calculator">
+                <div class="hero">
+                    <span>Calculadora</span>
+                    <h1>JS</h1>
+                </div>
+
+                <div id="visor" class="visor">
+                    <p>Insira valores e escolha uma operação.</p>
+                </div>
+
+                <div class="field-group">
+                    <label for="campoNum1">Insira um Número</label>
+                    <input type="text" id="campoNum1" placeholder="Ex: 1,2,3,4..." required>
+                </div>
+
+                <div class="field-group">
+                    <label for="campoNum2">Insira outro Número</label>
+                    <input type="text" id="campoNum2" placeholder="Ex: 1,2,3,4..." required>
+                </div>
+
+                <div class="buttons">
+                    <button onclick="somar(event)" id="btnSomar">Somar</button>
+                    <button onclick="subtrair(event)" id="btnSubtrair">Subtrair</button>
+                    <button onclick="multiplicar(event)" id="btnMultiplicar">Multiplicar</button>
+                    <button onclick="dividir(event)" id="btnDividir">Dividir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
